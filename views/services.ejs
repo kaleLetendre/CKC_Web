@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title || "Our Services - CKC Consulting" %></title>
+    <link href="/stylesheets/output.css" rel="stylesheet">
+</head>
+<body class="bg-light text-gray-900 overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
+            <a href="/" class="text-2xl font-bold text-primary">CKC Consulting</a>
+            <ul class="hidden md:flex space-x-8 text-lg font-medium">
+                <li><a href="/" class="text-gray-700 hover:text-primary transition">Home</a></li>
+                <li><a href="/about" class="text-gray-700 hover:text-primary transition">About</a></li>
+                <li><a href="/services" class="text-primary font-semibold">Services</a></li>
+                <li><a href="/contact" class="text-gray-700 hover:text-primary transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-80 flex items-center justify-center text-center bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container px-6">
+            <h1 class="text-5xl font-bold leading-tight">Professional Web & Software Solutions</h1>
+            <p class="text-lg mt-4 font-light">We create scalable websites and full-fledged digital platforms.</p>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-24 bg-gray-100">
+        <div class="container max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-primary">Our Services</h2>
+            <p class="text-gray-600 mt-4 text-lg">
+                We offer full-scale software solutions tailored for businesses of all sizes.
+            </p>
+
+            <!-- Optimized Grid Layout -->
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+                
+                <!-- Websites & Digital Platforms -->
+                <div class="p-8 bg-white rounded-xl shadow-lg border border-gray-300 transition hover:shadow-xl">
+                    <div class="text-5xl text-primary mb-4">
+                        💻
+                    </div>
+                    <h3 class="text-2xl font-semibold text-secondary">Websites & Digital Platforms</h3>
+                    <p class="mt-2 text-gray-700">
+                        From business websites to full-scale platforms like e-commerce, social media, and SaaS.
+                    </p>
+                    <ul class="mt-4 text-gray-700 text-left leading-relaxed space-y-2">
+                        <li>✔ Custom Business Websites</li>
+                        <li>✔ Social Media & Community Apps</li>
+                        <li>✔ E-commerce & Marketplaces</li>
+                        <li>✔ SaaS & Subscription Platforms</li>
+                    </ul>
+                    <a href="/contact" class="mt-6 inline-block text-primary font-semibold hover:underline">
+                        Learn More →
+                    </a>
+                </div>
+
+                <!-- Database Solutions -->
+                <div class="p-8 bg-white rounded-xl shadow-lg border border-gray-300 transition hover:shadow-xl">
+                    <div class="text-5xl text-primary mb-4">
+                        🗄️
+                    </div>
+                    <h3 class="text-2xl font-semibold text-secondary">Database Solutions</h3>
+                    <p class="mt-2 text-gray-700">
+                        Secure, scalable, and high-performance databases built for growth.
+                    </p>
+                    <ul class="mt-4 text-gray-700 text-left leading-relaxed space-y-2">
+                        <li>✔ SQL & NoSQL Databases</li>
+                        <li>✔ Cloud & On-Prem Solutions</li>
+                        <li>✔ Automated Backups & Security</li>
+                        <li>✔ Business Intelligence & Reporting</li>
+                    </ul>
+                    <a href="/contact" class="mt-6 inline-block text-primary font-semibold hover:underline">
+                        Learn More →
+                    </a>
+                </div>
+
+                <!-- Automation & AI -->
+                <div class="p-8 bg-white rounded-xl shadow-lg border border-gray-300 transition hover:shadow-xl">
+                    <div class="text-5xl text-primary mb-4">
+                        ⚙️
+                    </div>
+                    <h3 class="text-2xl font-semibold text-secondary">Automation & AI</h3>
+                    <p class="mt-2 text-gray-700">
+                        Automate tasks, improve efficiency, and leverage AI-driven tools.
+                    </p>
+                    <ul class="mt-4 text-gray-700 text-left leading-relaxed space-y-2">
+                        <li>✔ AI Chatbots & Assistants</li>
+                        <li>✔ Workflow & Process Automation</li>
+                        <li>✔ AI-Powered Business Insights</li>
+                        <li>✔ CRM & Sales Automation</li>
+                    </ul>
+                    <a href="/contact" class="mt-6 inline-block text-primary font-semibold hover:underline">
+                        Learn More →
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Second Row (Centered) -->
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 justify-center">
+                
+                <!-- Cloud Hosting -->
+                <div class="p-8 bg-white rounded-xl shadow-lg border border-gray-300 transition hover:shadow-xl">
+                    <div class="text-5xl text-primary mb-4">
+                        ☁️
+                    </div>
+                    <h3 class="text-2xl font-semibold text-secondary">Cloud Hosting</h3>
+                    <p class="mt-2 text-gray-700">
+                        Secure, scalable cloud hosting for high-performance applications.
+                    </p>
+                    <ul class="mt-4 text-gray-700 text-left leading-relaxed space-y-2">
+                        <li>✔ AWS, Azure, Google Cloud</li>
+                        <li>✔ Scalable & Dedicated Hosting</li>
+                        <li>✔ Managed Cloud Services</li>
+                        <li>✔ 24/7 Uptime Monitoring</li>
+                    </ul>
+                    <a href="/contact" class="mt-6 inline-block text-primary font-semibold hover:underline">
+                        Learn More →
+                    </a>
+                </div>
+
+                <!-- IT Consulting -->
+                <div class="p-8 bg-white rounded-xl shadow-lg border border-gray-300 transition hover:shadow-xl">
+                    <div class="text-5xl text-primary mb-4">
+                        📊
+                    </div>
+                    <h3 class="text-2xl font-semibold text-secondary">IT Consulting</h3>
+                    <p class="mt-2 text-gray-700">
+                        Expert guidance to optimize business technology and digital strategies.
+                    </p>
+                    <ul class="mt-4 text-gray-700 text-left leading-relaxed space-y-2">
+                        <li>✔ Digital Strategy & IT Planning</li>
+                        <li>✔ Software Architecture & Development</li>
+                        <li>✔ Cost & Performance Optimization</li>
+                        <li>✔ Vendor Selection & Integration</li>
+                    </ul>
+                    <a href="/contact" class="mt-6 inline-block text-primary font-semibold hover:underline">
+                        Learn More →
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Call to Action -->
+    <section class="bg-gradient-to-r from-secondary to-accent py-16 text-center text-white">
+        <h2 class="text-4xl font-bold">Let’s Build Your Future</h2>
+        <p class="text-lg mt-4">Get in touch and let’s discuss how we can bring your ideas to life.</p>
+        <a href="/contact" class="mt-6 inline-block bg-white text-secondary px-8 py-3 rounded-lg shadow-lg text-lg font-bold hover:bg-light transition">
+            Contact Us
+        </a>
+    </section>
+
+</body>
+</html>

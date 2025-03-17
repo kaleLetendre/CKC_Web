@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title || "About Us - CKC Consulting" %></title>
+    <link href="/stylesheets/output.css" rel="stylesheet">
+</head>
+<body class="bg-light text-gray-900 overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
+            <a href="/" class="text-2xl font-bold text-primary">CKC Consulting</a>
+            <ul class="hidden md:flex space-x-8 text-lg font-medium">
+                <li><a href="/" class="text-gray-700 hover:text-primary transition">Home</a></li>
+                <li><a href="/about" class="text-primary font-semibold">About</a></li>
+                <li><a href="/services" class="text-gray-700 hover:text-primary transition">Services</a></li>
+                <li><a href="/contact" class="text-gray-700 hover:text-primary transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-80 flex items-center justify-center text-center bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container px-6">
+            <h1 class="text-5xl font-bold leading-tight">Empowering Businesses with Technology</h1>
+            <p class="text-lg mt-4 font-light">We provide innovative software solutions tailored for growth and success.</p>
+        </div>
+    </header>
+
+    <!-- Company Overview -->
+    <section class="py-20 bg-white">
+        <div class="container max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-primary">Who We Are</h2>
+            <p class="text-gray-700 mt-6 text-lg leading-relaxed">
+                CKC Consulting is a technology-driven company that specializes in <strong>custom web development, databases, cloud hosting, automation, and IT consulting</strong>. 
+                We help businesses transform ideas into scalable, high-performance digital solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-primary">Our Core Values</h2>
+            <div class="mt-10 grid md:grid-cols-3 gap-8">
+                
+                <!-- Value 1 -->
+                <div class="p-8 bg-white rounded-xl shadow-lg border border-gray-300 transition hover:shadow-xl">
+                    <h3 class="text-2xl font-semibold text-secondary">Innovation</h3>
+                    <p class="mt-4 text-gray-700">We leverage the latest technology to build <strong>powerful</strong>, <strong>scalable</strong>, and <strong>future-ready solutions</strong>.</p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="p-8 bg-white rounded-xl shadow-lg border border-gray-300 transition hover:shadow-xl">
+                    <h3 class="text-2xl font-semibold text-secondary">Reliability</h3>
+                    <p class="mt-4 text-gray-700">We prioritize <strong>high-quality development</strong> and <strong>dependable support</strong> for our clients.</p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="p-8 bg-white rounded-xl shadow-lg border border-gray-300 transition hover:shadow-xl">
+                    <h3 class="text-2xl font-semibold text-secondary">Client-Centric Approach</h3>
+                    <p class="mt-4 text-gray-700">Your success is our priority. We <strong>collaborate closely</strong> to ensure the best results.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Our Team & Expertise -->
+    <section class="py-20 bg-white">
+        <div class="container max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-primary">Meet Our Team</h2>
+            <p class="text-gray-700 mt-6 text-lg leading-relaxed">
+                Our team is composed of **highly skilled developers, cloud architects, and IT strategists** who bring years of experience in the industry.
+            </p>
+
+            <div class="mt-10 grid md:grid-cols-3 gap-8">
+                
+                <!-- Team Member 1 -->
+                <div class="p-8 bg-gray-100 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-semibold text-secondary">Kale Letendre</h3>
+                    <p class="mt-2 text-gray-700">Systems/Software Architect & Backend Developer</p>
+                    <p class="mt-4 text-gray-600 text-sm">Specialized in Cloud solutions and Performance applications.</p>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="p-8 bg-gray-100 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-semibold text-secondary">[Team Member Name]</h3>
+                    <p class="mt-2 text-gray-700">...</p>
+                    <p class="mt-4 text-gray-600 text-sm">...</p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="p-8 bg-gray-100 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-semibold text-secondary">[Team Member Name]</h3>
+                    <p class="mt-2 text-gray-700">...</p>
+                    <p class="mt-4 text-gray-600 text-sm">...</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-gradient-to-r from-secondary to-accent py-16 text-center text-white">
+        <h2 class="text-4xl font-bold">Let's Build Something Great</h2>
+        <p class="text-lg mt-4">Ready to discuss your next project? Contact us for a free consultation.</p>
+        <a href="/contact" class="mt-6 inline-block bg-white text-secondary px-8 py-3 rounded-lg shadow-lg text-lg font-bold hover:bg-light transition">
+            Get in Touch
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-primary text-white text-center text-sm">
+        &copy; <%= new Date().getFullYear() %> CKC Consulting. All rights reserved.
+    </footer>
+
+</body>
+</html>
