@@ -11,3 +11,8 @@ body {
 a {
   color: #06b7fd;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}

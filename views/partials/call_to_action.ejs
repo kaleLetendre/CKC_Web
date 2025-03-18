@@ -1,0 +1,13 @@
+<% if (ctaTitle) { %>
+    <section class="bg-gradient-to-r from-secondary to-accent py-16 text-center text-white">
+        <div class="container max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold"><%= ctaTitle %></h2>
+            <% if (ctaSubtitle) { %>
+                <p class="text-lg mt-4"><%= ctaSubtitle %></p>
+            <% } %>
+            <a href="/contact" class="mt-6 inline-block bg-white text-secondary px-8 py-3 rounded-lg shadow-lg text-lg font-bold hover:bg-light transition">
+                Contact Us
+            </a>
+        </div>
+    </section>
+<% } %>

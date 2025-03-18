@@ -3,31 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title || "Our Services - CKC Consulting" %></title>
+    <title><%= title || "Our Services - CKC" %></title>
     <link href="/stylesheets/output.css" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body class="bg-light text-gray-900 overflow-x-hidden">
 
-    <!-- Navbar -->
-    <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-        <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
-            <a href="/" class="text-2xl font-bold text-primary">CKC Consulting</a>
-            <ul class="hidden md:flex space-x-8 text-lg font-medium">
-                <li><a href="/" class="text-gray-700 hover:text-primary transition">Home</a></li>
-                <li><a href="/about" class="text-gray-700 hover:text-primary transition">About</a></li>
-                <li><a href="/services" class="text-primary font-semibold">Services</a></li>
-                <li><a href="/contact" class="text-gray-700 hover:text-primary transition">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+<!-- Navbar -->
+<%- include('partials/nav') %>
 
-    <!-- Hero Section -->
-    <header class="relative h-80 flex items-center justify-center text-center bg-gradient-to-r from-primary to-secondary text-white">
-        <div class="container px-6">
-            <h1 class="text-5xl font-bold leading-tight">Professional Web & Software Solutions</h1>
-            <p class="text-lg mt-4 font-light">We create scalable websites and full-fledged digital platforms.</p>
-        </div>
-    </header>
+<%- include('partials/hero') %>
 
     <!-- Services Section -->
     <section class="py-24 bg-gray-100">
@@ -153,13 +138,10 @@
 
 
     <!-- Call to Action -->
-    <section class="bg-gradient-to-r from-secondary to-accent py-16 text-center text-white">
-        <h2 class="text-4xl font-bold">Let’s Build Your Future</h2>
-        <p class="text-lg mt-4">Get in touch and let’s discuss how we can bring your ideas to life.</p>
-        <a href="/contact" class="mt-6 inline-block bg-white text-secondary px-8 py-3 rounded-lg shadow-lg text-lg font-bold hover:bg-light transition">
-            Contact Us
-        </a>
-    </section>
+    <%- include('partials/call_to_action') %>
+
+    <!-- Footer -->
+    <%- include('partials/footer') %>
 
 </body>
 </html>
