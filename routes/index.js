@@ -42,7 +42,7 @@ router.get('/about', (req, res) => {
 });
 
 router.get('/contact', (req, res) => {
-    const email = "contact@ckcconsulting.com";
+    const email = "contact@email.com";
     res.render('contact', { 
         title: "Contact Us - CKC", 
         heroTitle: "Let's Connect",

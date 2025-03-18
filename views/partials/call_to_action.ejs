@@ -1,13 +1,21 @@
 <% if (ctaTitle) { %>
-    <section class="bg-gradient-to-r from-secondary to-accent py-16 text-center text-white">
-        <div class="container max-w-4xl mx-auto">
-            <h2 class="text-4xl font-bold"><%= ctaTitle %></h2>
-            <% if (ctaSubtitle) { %>
-                <p class="text-lg mt-4"><%= ctaSubtitle %></p>
-            <% } %>
-            <a href="/contact" class="mt-6 inline-block bg-white text-secondary px-8 py-3 rounded-lg shadow-lg text-lg font-bold hover:bg-light transition">
-                Contact Us
-            </a>
+    <section class="relative bg-primary py-8 text-white">
+        <div class="container max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+            
+            <!-- Left: Text Content -->
+            <div class="md:w-2/3 text-center md:text-left">
+                <h2 class="text-3xl font-bold leading-tight"><%= ctaTitle %></h2>
+                <% if (ctaSubtitle) { %>
+                    <p class="text-md mt-2 opacity-90"><%= ctaSubtitle %></p>
+                <% } %>
+            </div>
+
+            <!-- Right: Button -->
+            <div class="mt-4 md:mt-0">
+                <a href="/contact" class="inline-block bg-white text-primary px-6 py-2 rounded-full shadow-lg text-md font-bold hover:bg-light transition">
+                    Contact Us
+                </a>
+            </div>
         </div>
     </section>
 <% } %>
